@@ -50,11 +50,11 @@
 
 /* CSS agregado por Jose Massaro */
 
-.descripcion-app{
+/* .descripcion-app{
 
 	text-align: left;
 	
-}
+} */
 
 
 
@@ -332,7 +332,7 @@ section {
 	--------------------------------------------------------------*/
 .pix-btn {
 	padding: 8px 30px;
-	background: #fa7070;
+	background: rgb(253, 119, 50);
 	border-radius: 30px;
 	display: inline-block;
 	font-size: 14px;
@@ -5411,7 +5411,7 @@ select {
 	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 500;
-	color: #fa7070;
+	color: rgb(253, 119, 50); 
 	letter-spacing: 3px;
 }
 
@@ -6555,7 +6555,7 @@ select {
 }
 
 .editor-content .section-title.style-two p {
-	color: #fa7070;
+	color: rgb(253, 119, 50);
 	margin-bottom: 0px;
 }
 
