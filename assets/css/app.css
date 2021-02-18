@@ -47,10 +47,13 @@
 /* Based on http://coding.smashingmagazine.com/2013/02/14/setting-weights-and-styles-at-font-face-declaration/ */
 /* Front */
 
+
+/* CSS agregado por Jose Massaro */
+
 .descripcion-app{
 
-	text-align: justify;
-	word-spacing: -1px;
+	text-align: left;
+	
 }
 
 
