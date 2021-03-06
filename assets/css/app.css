@@ -5415,6 +5415,8 @@ select {
 	letter-spacing: 3px;
 }
 
+
+
 .section-title .title {
 	font-size: 36px;
 	font-weight: 600;
@@ -5484,7 +5486,7 @@ select {
 }
 
 .section-title.color-two .sub-title {
-	color: #7052fb;
+	color: rgb(253, 119, 50)ß;
 }
 
 .section-title.style-four .title {
