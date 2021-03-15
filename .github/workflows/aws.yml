@@ -2,7 +2,7 @@ name: S3 Deploy Stage
 on:
   push:
     branches:
-      - staging
+      - main
      
 jobs:
   build:
