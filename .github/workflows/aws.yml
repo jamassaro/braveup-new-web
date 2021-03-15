@@ -1,25 +1,21 @@
-name: S3 Deploy Stage
+name: List S3 Contents - Multi OS
+
 on:
-  push:
-    branches:
-      - main
-
+  push
 jobs:
-  build:
-    runs-on: ubuntu-20.04
-
+  listS3:
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node-version: [12.x]
-
+        os: [macOS-10.14, windows-2016, ubuntu-18.04]
     steps:
       - uses: chrislennon/action-aws-cli@v1.1
-      - name: Deploy
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        run: |
+      # All commands after this point have access to the AWS CLI
+      - run: |
           aws s3 cp \
             --recursive \
             --region us-east-1 \ 
             . s3://braveup.co --acl public-read
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
