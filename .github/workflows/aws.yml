@@ -22,4 +22,4 @@ jobs:
           aws s3 cp \
             --recursive \
             --region us-east-1 \ 
-            . s3://braveup.co --acl public-read
+            ./ s3://braveup.co --acl public-read
